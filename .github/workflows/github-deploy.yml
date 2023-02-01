@@ -42,7 +42,7 @@ jobs:
           pnpm install
 
       - name: Build
-        run: pnpm docs:build-github
+        run: pnpm docs:build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
