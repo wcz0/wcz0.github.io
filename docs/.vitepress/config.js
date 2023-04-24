@@ -31,7 +31,7 @@ export default {
         "/other/question": sidebarOtherQuestion(),
         "/other/share" : sidebarOtherShare(),
       },
-      socialLinks: [{ icon: "github", link: "https://github.com/gogf/gf" }],
+      socialLinks: [{ icon: "github", link: "https://github.com/wcz0/wcz.github.io" }],
       docFooter: {
         prev: '上一页',
         next: '下一页'
@@ -47,16 +47,23 @@ export default {
   function nav() {
     return [
       { 
-        text: "文档(wip)",
-        link: "/guide/introduction/introduce", 
+        text: "分类",
+        // link: "/classification/introduction/introduce", 
+        items: [
+            { text: "前端", link: "/classification/front-end" },
+            { text: "后端", link: "/classification/back-end" },
+            { text: "数据库", link: "/classification/database" },
+            { text: "其他", link: "/classification/operation" },
+        ],
         activeMatch: "/guide/"
       },
       {
-        text: "关于(wip)",
-        items: [
-          { text: "加入我们", link: "/about/join" },
-          { text: "支持我们", link: "/about/support" },
-        ],
+        text: "关于",
+        // items: [
+        //   { text: "加入我们", link: "/about/join" },
+        //   { text: "支持我们", link: "/about/support" },
+        // ],
+        link: "/about",
         activeMatch: "/about/",
       },
       {
